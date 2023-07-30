@@ -39,7 +39,7 @@
             --sidebar-width: 68px;
          }
          
-         navlink { cursor: pointer; }
+         navlink { cursor: pointer; display: block; }
          navlink:hover { color: #27f; transition: .3s ease-in-out; }
          
          ::-webkit-scrollbar {
@@ -360,6 +360,38 @@
             to="486/index.html">
             hn x 486
          </NavLink>
+         <br><br>
+         <NavLink 
+            to="PSHEN/html/hen_installer/index.html">
+            PS3HEN installer
+         </NavLink>
+         <NavLink 
+            to="PSHEN/html/ps3hen_enabler_flash.html">
+            ps3hen_enabler_flash
+         </NavLink>
+         <NavLink 
+            to="PSHEN/html/ps3hen_enabler_usb000.html">
+            ps3hen_enabler_usb000
+         </NavLink>
+         <br><br>
+         <NavLink 
+            to="https://nightkinghost.com">
+            https://nightkinghost.com
+         </NavLink>
+         <NavLink 
+            to="http://nightkinghost.com/ps3/index.html">
+            http://nightkinghost.com/ps3/index.html
+         </NavLink>
+         <NavLink 
+            to="http://nightkinghost.com/ps3/hen_installer">
+            http://nightkinghost.com/ps3/hen_installer
+         </NavLink>
+         <NavLink 
+            to="http://nightkinghost.com/ps3/alternate">
+            http://nightkinghost.com/ps3/alternate
+         </NavLink>
+         <br><br>
+
          
       </main>
 
@@ -381,7 +413,7 @@
 
 
             NavLinks.forEach( link => link.addEventListener( 'click', ev => {
-               window.open( link.getAttribute( 'to' ), '_blank' );
+               window.open( link.getAttribute( 'to' ), '' );
             } ) );
 
          } );
